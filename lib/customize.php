@@ -1,10 +1,10 @@
 <?php
 /**
- * Memberships Starter.
+ * Club Dextra.
  *
- * This file adds the Customizer additions to the Memberships Starter Theme.
+ * This file adds the Customizer additions to the Club Dextra Theme.
  *
- * @package Memberships Starter
+ * @package Club Dextra
  * @author  Bicicleta Studio
  * @license GPL-2.0-or-later
  * @link    https://bicicleta.studio
@@ -119,170 +119,6 @@ function genesis_starter_front_page_hero_customize($wp_customize){
 			'sanitize_callback' => 'sanitize_text'
 		)
 	));
-		
-	// Logged in Description Text
-	$wp_customize->add_setting('hero_loggedin_description',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_loggedin_description',
-		array(
-			'label' => __('Texto de la descripción logueado', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_loggedin_description',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Benefits
-	$wp_customize->add_setting('hero_benefit_1_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_1_text',
-		array(
-			'label' => __('Hero benefit 1 text', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_1_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_1_icon',
-		array(
-		'default' => __('dashicons-heart', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_1_icon',
-		array(
-			'label' => __('Hero benefit 1 icon', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_1_icon',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_2_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_2_text',
-		array(
-			'label' => __('Hero benefit 2 text', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_2_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_2_icon',
-		array(
-		'default' => __('dashicons-heart', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_2_icon',
-		array(
-			'label' => __('Hero benefit 2 icon', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_2_icon',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_3_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_3_text',
-		array(
-			'label' => __('Hero benefit 3 text', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_3_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_3_icon',
-		array(
-		'default' => __('dashicons-heart', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_3_icon',
-		array(
-			'label' => __('Hero benefit 3 icon', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_3_icon',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_4_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_4_text',
-		array(
-			'label' => __('Hero benefit 4 text', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_4_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	$wp_customize->add_setting('hero_benefit_4_icon',
-		array(
-		'default' => __('dashicons-heart', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'hero_benefit_4_icon',
-		array(
-			'label' => __('Hero benefit 4 icon', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_benefit_4_icon',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
 
 	// Primary CTA Text
     $wp_customize->add_setting(
@@ -317,40 +153,6 @@ function genesis_starter_front_page_hero_customize($wp_customize){
 			'type' => 'text',
 			'sanitize_callback' => 'sanitize_text'
 	));
-	
-	// Secondary CTA Text
-    $wp_customize->add_setting(
-    	'hero_secondary_cta_text', 
-    	array(
-        	'default' => __('Lorem ipsum', 'genesis-starter'),
-			'type' => 'theme_mod'
-    ));
-    $wp_customize->add_control(
-    	'hero_secondary_cta_text',
-		array(
-        	'label' => __('Texto de CTA Secundario', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_secondary_cta_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-    ));
-
-    // Secondary CTA Link
-    $wp_customize->add_setting(
-    	'hero_secondary_cta_link',
-    	array(
-        	'default' => home_url('/registro'),
-			'type' => 'theme_mod'
-    ));
-    $wp_customize->add_control(
-    	'hero_secondary_cta_link', 
-    	array(
-        	'label' => __('Enlace del CTA', 'genesis-starter'),
-			'section' => 'genesis_starter_hero_section',
-			'settings' => 'hero_secondary_cta_link',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-    ));
 
 }
 
@@ -403,25 +205,6 @@ function genesis_starter_front_page_featureds_customize($wp_customize){
 			'sanitize_callback' => 'sanitize_text'
 		)
 	));
-		
-	// Description Text
-	$wp_customize->add_setting('featured_description_1',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'featured_description_1',
-		array(
-			'label' => __('Descripciónl destacado 1', 'genesis-starter'),
-			'section' => 'genesis_starter_featureds_section',
-			'settings' => 'featured_description_1',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
 	
 	// Featured Image 2
 	$wp_customize->add_setting('featured_img_2',
@@ -460,25 +243,6 @@ function genesis_starter_front_page_featureds_customize($wp_customize){
 			'sanitize_callback' => 'sanitize_text'
 		)
 	));
-		
-	// Description Text
-	$wp_customize->add_setting('featured_description_2',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'featured_description_2',
-		array(
-			'label' => __('Descripción destacado 2', 'genesis-starter'),
-			'section' => 'genesis_starter_featureds_section',
-			'settings' => 'featured_description_2',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
 	
 	// Featured Image 3
 	$wp_customize->add_setting('featured_img_3',
@@ -513,25 +277,6 @@ function genesis_starter_front_page_featureds_customize($wp_customize){
 			'label' => __('Título del destacado 3', 'genesis-starter'),
 			'section' => 'genesis_starter_featureds_section',
 			'settings' => 'featured_title_3',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-		
-	// Description Text
-	$wp_customize->add_setting('featured_description_3',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'featured_description_3',
-		array(
-			'label' => __('Descripción del destacado 3', 'genesis-starter'),
-			'section' => 'genesis_starter_featureds_section',
-			'settings' => 'featured_description_3',
 			'type' => 'text',
 			'sanitize_callback' => 'sanitize_text'
 		)
@@ -575,25 +320,6 @@ function genesis_starter_front_page_featureds_customize($wp_customize){
 		)
 	));
 		
-	// Description Text
-	$wp_customize->add_setting('featured_description_4',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'genesis-starter')
-		)
-	);
-	
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'featured_description_4',
-		array(
-			'label' => __('Descripción del destacado 4', 'genesis-starter'),
-			'section' => 'genesis_starter_featureds_section',
-			'settings' => 'featured_description_4',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-		
 }
 
 // Add Content section to costumizer
@@ -606,6 +332,117 @@ function genesis_starter_front_page_content_customize($wp_customize){
 		'title' => __('Contenido', 'genesis-starter'),
 		'description' => __('Personaliza la sección Contenido', 'genesis-starter'),
 		'priority' => 60
+	));
+
+	// Directos Content Title Text
+	$wp_customize->add_setting('directos_content_title',
+	array(
+		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
+		)
+	);
+
+	$wp_customize->add_control(new WP_Customize_Color_Control(
+		$wp_customize,
+		'directos_content_title',
+		array(
+			'label' => __('Título de la sección de Directos', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'directos_content_title',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
+		)
+	));
+
+	// Directos Content CTA Text
+	$wp_customize->add_setting('directos_content_cta_text',
+		array(
+		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
+		)
+	);
+
+	$wp_customize->add_control(new WP_Customize_Color_Control(
+		$wp_customize,
+		'directos_content_cta_text',
+		array(
+			'label' => __('Texto del CTA de los Directos', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'directos_content_cta_text',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
+		)
+	));
+
+	// Directos Content CTA Link
+	$wp_customize->add_setting(
+		'directos_content_cta_link', 
+		array(
+			'default' => __('Lorem ipsum', 'genesis-starter'),
+			'type' => 'theme_mod'
+	));
+
+	$wp_customize->add_control(
+		'directos_content_cta_link',
+		array(
+			'label' => __('Enlace del CTA de los Directos', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'directos_content_cta_link',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
+	));
+
+	// consultorias Content Title Text
+	$wp_customize->add_setting('consultorias_content_title',
+	array(
+		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
+		)
+	);
+
+	$wp_customize->add_control(new WP_Customize_Color_Control(
+		$wp_customize,
+		'consultorias_content_title',
+		array(
+			'label' => __('Título de la sección de Consultorías', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'consultorias_content_title',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
+		)
+	));
+
+	// Consultorías Content CTA Text
+	$wp_customize->add_setting('consultorias_content_cta_text',
+		array(
+		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
+		)
+	);
+
+	$wp_customize->add_control(new WP_Customize_Color_Control(
+		$wp_customize,
+		'consultorias_content_cta_text',
+		array(
+			'label' => __('Texto del CTA de las Consultorías', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'consultorias_content_cta_text',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
+		)
+	));
+
+	// Consultorías Content CTA Link
+	$wp_customize->add_setting(
+		'consultorias_content_cta_link', 
+		array(
+			'default' => __('Lorem ipsum', 'genesis-starter'),
+			'type' => 'theme_mod'
+	));
+	$wp_customize->add_control(
+		'consultorias_content_cta_link',
+		array(
+			'label' => __('Enlace del CTA de las Consultorías', 'genesis-starter'),
+			'section' => 'genesis_starter_content_section',
+			'settings' => 'consultorias_content_cta_link',
+			'type' => 'text',
+			'sanitize_callback' => 'sanitize_text'
 	));
 
 	// Cursos Content Title Text
@@ -662,172 +499,7 @@ function genesis_starter_front_page_content_customize($wp_customize){
 			'type' => 'text',
 			'sanitize_callback' => 'sanitize_text'
 	));
-
-	// Masterclasses Content Title Text
-	$wp_customize->add_setting('masterclasses_content_title',
-	array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'masterclasses_content_title',
-		array(
-			'label' => __('Título de la sección de Masterclasses', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'masterclasses_content_title',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Masterclasses Content CTA Text
-	$wp_customize->add_setting('masterclasses_content_cta_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'masterclasses_content_cta_text',
-		array(
-			'label' => __('Texto del CTA de los Masterclasses', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'masterclasses_content_cta_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Masterclasses Content CTA Link
-	$wp_customize->add_setting(
-		'masterclasses_content_cta_link', 
-		array(
-			'default' => __('Lorem ipsum', 'genesis-starter'),
-			'type' => 'theme_mod'
-	));
-	$wp_customize->add_control(
-		'masterclasses_content_cta_link',
-		array(
-			'label' => __('Enlace del CTA de las Masterclasses', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'masterclasses_content_cta_link',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-	));
-
-	// Talleres Content Title Text
-	$wp_customize->add_setting('talleres_content_title',
-	array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'talleres_content_title',
-		array(
-			'label' => __('Título de la sección de Talleres', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'talleres_content_title',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Talleres Content CTA Text
-	$wp_customize->add_setting('talleres_content_cta_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'talleres_content_cta_text',
-		array(
-			'label' => __('Texto del CTA de los Talleres', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'talleres_content_cta_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Talleres Content CTA Link
-	$wp_customize->add_setting(
-		'talleres_content_cta_link', 
-		array(
-			'default' => __('Lorem ipsum', 'genesis-starter'),
-			'type' => 'theme_mod'
-	));
-	$wp_customize->add_control(
-		'talleres_content_cta_link',
-		array(
-			'label' => __('Enlace del CTA de los Talleres', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'talleres_content_cta_link',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-	));
 	
-	// Recursos Content Title Text
-	$wp_customize->add_setting('recursos_content_title',
-	array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'recursos_content_title',
-		array(
-			'label' => __('Título de la sección de Recursos', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'recursos_content_title',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Recursos Content CTA Text
-	$wp_customize->add_setting('recursos_content_cta_text',
-		array(
-		'default' => __('Lorem ipsum dolor sit amet', 'genesis-starter')
-		)
-	);
-
-	$wp_customize->add_control(new WP_Customize_Color_Control(
-		$wp_customize,
-		'recursos_content_cta_text',
-		array(
-			'label' => __('Texto del CTA de los Recursos', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'recursos_content_cta_text',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-		)
-	));
-
-	// Recursos Content CTA Link
-	$wp_customize->add_setting(
-		'recursos_content_cta_link', 
-		array(
-			'default' => __('Lorem ipsum', 'genesis-starter'),
-			'type' => 'theme_mod'
-	));
-	$wp_customize->add_control(
-		'recursos_content_cta_link',
-		array(
-			'label' => __('Enlace del CTA de los Recursos', 'genesis-starter'),
-			'section' => 'genesis_starter_content_section',
-			'settings' => 'recursos_content_cta_link',
-			'type' => 'text',
-			'sanitize_callback' => 'sanitize_text'
-	));
-
 	// Testimonios Content Title Text
 	$wp_customize->add_setting('testimonios_content_title',
 	array(
@@ -902,7 +574,7 @@ function genesis_starter_front_page_hero_customize_css(){
 		.hero:not(.banner-bottom) {
 			background-image: url(<?php echo $header_image; ?>);
 			background-position: <?php echo $background_position; ?>;
-			background-size: contain;
+			background-size: cover;
 			background-repeat: no-repeat;
 		}
 	}

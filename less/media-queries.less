@@ -59,10 +59,9 @@
 	.featureds .wrap .row {
 		.flex();
 		.box {
-			flex-basis: calc(50% - 15px);
+			flex-basis: calc(25% - 15px);
 		}
 	}
-
 
 	.posts-loop .wrap {
 		h3 {
@@ -130,6 +129,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	.page-id-74 .content .course-container {
+		.course {
+			flex-basis: calc(50% - 15px)!important;
 		}
 	}
 }
@@ -293,6 +298,11 @@
 		max-width: 100%;
 	}
 
+	.page-id-199 .content,
+	.page-id-201 .content {
+		width: 100%;
+	}
+
 	/* Sidebar
 	--------------------------------------------- */
 
@@ -441,32 +451,14 @@
 
 	.hero .wrap {
 		.flex();
-		justify-content: flex-end;
+		justify-content: flex-start;
 		.box {
-			flex-basis: 60%;
+			flex-basis: 50%;
 			text-align: left;
-			.benefits {
-				margin: 30px 0 10px;
-				.benefit {
-					flex-basis: calc(50% - 15px);
-					.flex();
-					justify-content: flex-start;
-					i {
-						margin-right: 10px;
-						align-self: center;
-						justify-content: center;
-					}
-				}
-			}
 			.cta {
 				justify-content: flex-start!important;
 			}
 		}
-	}
-
-	.filters .wrap .row li {
-		flex-basis: calc(25% - 15px)!important;
-		margin-bottom: 0!important;
 	}
 
 	.featureds .wrap .row {
@@ -500,7 +492,6 @@
 	.hero-bottom {
 		background-image: none!important;
 		margin-bottom: 0!important;
-		background-color:  @featured-color;
 		.wrap {
 			padding-top: 60px;
 			justify-content: center;
@@ -529,6 +520,12 @@
 		}
 		.footer-widgets {
 			margin-top: 60px;
+		}
+	}
+
+	.page-id-74 .content .course-container {
+		.course {
+			flex-basis: calc(33.33% - 15px)!important;
 		}
 	}
 

@@ -33,40 +33,9 @@ function bs_display_front_page_sections() {
 			<div class="box">
 				<h1><?php echo get_theme_mod('hero_title'); ?></h1>
 				<p><?php echo get_theme_mod('hero_description'); ?></p>
-				<div class="benefits">
-					<div class="benefit">
-						<i class=" <?php echo get_theme_mod('hero_benefit_1_icon'); ?>" aria-hidden="true"></i>
-						<p><?php echo get_theme_mod('hero_benefit_1_text'); ?></p>
-					</div>
-					<div class="benefit">
-						<i class=" <?php echo get_theme_mod('hero_benefit_1_icon'); ?>" aria-hidden="true"></i>
-						<p><?php echo get_theme_mod('hero_benefit_2_text'); ?></p>
-					</div>
-					<div class="benefit">
-						<i class=" <?php echo get_theme_mod('hero_benefit_1_icon'); ?>" aria-hidden="true"></i>
-						<p><?php echo get_theme_mod('hero_benefit_3_text'); ?></p>
-					</div>
-					<div class="benefit">
-						<i class=" <?php echo get_theme_mod('hero_benefit_1_icon'); ?>" aria-hidden="true"></i>
-						<p><?php echo get_theme_mod('hero_benefit_4_text'); ?></p>
-					</div>
-				</div>
 				<div class="cta">
 					<button class="primary" onclick="window.location.href='<?php echo get_theme_mod('hero_primary_cta_link'); ?>'"><?php echo get_theme_mod('hero_primary_cta_text'); ?></button>
-					<button class="secondary" onclick="window.location.href='<?php echo get_theme_mod('hero_secondary_cta_link'); ?>'"><?php echo get_theme_mod('hero_secondary_cta_text'); ?></button>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="filters">
-		<div class="wrap">
-			<div class="row">
-				<?php wp_nav_menu(
-					array(
-						'theme_location' => 'filter-menu',  
-						'menu_class' 	 => 'genesis-nav-menu'
-					)
-				); ?>
 			</div>
 		</div>
 	</section>
@@ -75,74 +44,25 @@ function bs_display_front_page_sections() {
 			<div class="row">
 				<div class="box">
 					<img src="<?php echo get_theme_mod('featured_img_1'); ?>">
-					<h3><?php echo get_theme_mod('featured_title_1'); ?></h3>
-					<p><?php echo get_theme_mod('featured_description_1'); ?></p>
+					<p><?php echo get_theme_mod('featured_title_1'); ?></p>
 				</div>
 				<div class="box">
 					<img src="<?php echo get_theme_mod('featured_img_2'); ?>">
-					<h3><?php echo get_theme_mod('featured_title_2'); ?></h3>
-					<p><?php echo get_theme_mod('featured_description_2'); ?></p>
+					<p><?php echo get_theme_mod('featured_title_2'); ?></p>
 				</div>
 				<div class="box">
 					<img src="<?php echo get_theme_mod('featured_img_3'); ?>">
-					<h3><?php echo get_theme_mod('featured_title_3'); ?></h3>
-					<p><?php echo get_theme_mod('featured_description_3'); ?></p>
+					<p><?php echo get_theme_mod('featured_title_3'); ?></p>
 				</div>
 				<div class="box">
 					<img src="<?php echo get_theme_mod('featured_img_4'); ?>">
-					<h3><?php echo get_theme_mod('featured_title_4'); ?></h3>
-					<p><?php echo get_theme_mod('featured_description_4'); ?></p>
+					<p><?php echo get_theme_mod('featured_title_4'); ?></p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<?php else: ?>
-	<section class="hero">
-		<div class="wrap">
-			<div class="box">
-				<h1><?php echo get_theme_mod('hero_loggedin_title'); ?></h1>
-				<p><?php echo get_theme_mod('hero_loggedin_description'); ?></p>
-			</div>
-		</div>
-	</section>
 	<?php endif; ?>
-	<section class="posts-loop descargas">
-		<div class="wrap">
-			<h3><?php echo get_theme_mod('descargas_content_title'); ?></h3>
-			<div class="posts-wrapper"> 
-			
-			<?php global $post;
-
-			$args = array(
-				'posts_per_page' 	=> 3,
-				'post_type' 		=> 'descarga',
-				'order' 			=> 'DESC'
-			);
-
-			$myposts = get_posts($args);
-
-			foreach ($myposts as $post):
-			setup_postdata($post); ?>
-				<a href="<?php the_permalink(); ?>">
-					<article class="descarga">
-						<header class="entry-header">
-							<?php the_post_thumbnail(); ?>
-						</header>
-						<div class="entry-content">
-							<h2 class="entry-title"><?php the_title(); ?></h2>
-						</div>
-					</article>
-				</a><?php
-
-   			endforeach;
-   			wp_reset_postdata();?>
-
-			</div>
-			<div class="cta">
-				<button onclick="window.location.href='<?php echo get_theme_mod('descargas_content_cta_link'); ?>'"><?php echo get_theme_mod('descargas_content_cta_text'); ?></button>
-			</div>
-		</div>
-	</section>
 	<section class="posts-loop directos">
 		<div class="wrap">
 			<h3><?php echo get_theme_mod('directos_content_title'); ?></h3>
@@ -180,16 +100,17 @@ function bs_display_front_page_sections() {
 			</div>
 		</div>
 	</section>
-	<section class="posts-loop recurso">
+
+	<section class="posts-loop consultorias">
 		<div class="wrap">
-			<h3><?php echo get_theme_mod('recursos_content_title'); ?></h3>
+			<h3><?php echo get_theme_mod('consultorias_content_title'); ?></h3>
 			<div class="posts-wrapper"> 
 			
 			<?php global $post;
 
 			$args = array(
 				'posts_per_page' 	=> 3,
-				'post_type' 		=> 'recurso',
+				'post_type' 		=> 'consultoria',
 				'order' 			=> 'DESC'
 			);
 
@@ -198,7 +119,7 @@ function bs_display_front_page_sections() {
 			foreach ($myposts as $post):
 			setup_postdata($post); ?>
 				<a href="<?php the_permalink(); ?>">
-					<article class="recurso">
+					<article class="consultoria">
 						<header class="entry-header">
 							<?php the_post_thumbnail(); ?>
 						</header>
@@ -213,7 +134,44 @@ function bs_display_front_page_sections() {
 
 			</div>
 			<div class="cta">
-				<button onclick="window.location.href='<?php echo get_theme_mod('recursos_content_cta_link'); ?>'"><?php echo get_theme_mod('recursos_content_cta_text'); ?></button>
+				<button onclick="window.location.href='<?php echo get_theme_mod('consultorias_content_cta_link'); ?>'"><?php echo get_theme_mod('consultorias_content_cta_text'); ?></button>
+			</div>
+		</div>
+	</section>
+	<section class="posts-loop cursos">
+		<div class="wrap">
+			<h3><?php echo get_theme_mod('cursos_content_title'); ?></h3>
+			<div class="posts-wrapper"> 
+			
+			<?php global $post;
+
+			$args = array(
+				'posts_per_page' 	=> 3,
+				'post_type' 		=> 'course',
+				'order' 			=> 'DESC'
+			);
+
+			$myposts = get_posts($args);
+
+			foreach ($myposts as $post):
+			setup_postdata($post); ?>
+				<a href="<?php the_permalink(); ?>">
+					<article class="curso">
+						<header class="entry-header">
+							<?php the_post_thumbnail(); ?>
+						</header>
+						<div class="entry-content">
+							<h2 class="entry-title"><?php the_title(); ?></h2>
+						</div>
+					</article>
+				</a><?php
+
+   			endforeach;
+   			wp_reset_postdata();?>
+
+			</div>
+			<div class="cta">
+				<button onclick="window.location.href='<?php echo get_theme_mod('cursos_content_cta_link'); ?>'"><?php echo get_theme_mod('cursos_content_cta_text'); ?></button>
 			</div>
 		</div>
 	</section>

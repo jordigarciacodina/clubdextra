@@ -19,6 +19,7 @@
 		.box {
 			text-align: center;
 			z-index: 2;
+			color: @base-color;
 			span {
 				font-weight: 700;
 			}
@@ -28,54 +29,9 @@
 			p {
 				margin-bottom: 30px;
 			}
-			.benefits {
-				margin: 30px 0 40px;
-				.flex();
-				.benefit {
-					margin-bottom: 20px;
-					flex-basis: calc(50% - 15px);
-					p:last-child {
-						margin: 0;
-					}
-					i {
-						color: @featured-color;
-					}
-				}
-			}
 			.cta {
 				.flex();
 				flex-direction: column;
-				.primary {
-					margin-bottom: 30px;
-				}
-				.secondary {
-					.inverse-btn(@featured-color);
-				}
-			}
-		}
-	}
-}
-
-/* Filters */
-
-.filters {
-	.section();
-	.wrap {
-		.wrap();
-		padding-bottom: 0;
-		.row {
-			margin: 0;
-			text-align: center;
-			#menu-filter-menu {
-				.flex();
-				li {
-					flex-basis: calc(50% - 15px);
-					margin-bottom: 30px;
-					a {
-						.inverse-btn(@featured-color);
-						width: 100% !important;
-					}
-				}
 			}
 		}
 	}
@@ -85,12 +41,17 @@
 
 .featureds {
 	.section();
+	margin-bottom: 60px;
+	background-color:#f9f9f9;
 	.wrap {
 		.wrap();
+		padding-bottom: 30px;
 		.row {
+			.flex();
 			.box {
 				text-align: center;
 				margin-bottom: 30px;
+				flex-basis: calc(50% - 15px);
 				img {
 					margin-bottom: 20px;
 				}
@@ -118,7 +79,6 @@
 				background-color: @base-color;
 				display: flex;
 				article {
-					box-shadow: 0 5px 15px -10px rgb(0,0,0,.3);
 					.entry-header {
 						img {
 							margin-bottom: 0;
@@ -142,15 +102,12 @@
 		.cta {
 			text-align: center;
 			button {
-				.inverse-btn(@primary-color);
+				.inverse-btn(@background-color);
 			}
 		}
 	}
 }
 
-section.recurso {
-	margin-bottom: 0;
-}
 
 /* Testimonials */
 
@@ -190,21 +147,15 @@ section.recurso {
 				}
 			}
 		}
-		.cta button {
-			.inverse-btn(@primary-color);
+		.cta {
+			text-align: center;
+			button {
+				.inverse-btn(@background-color);
+			}
 		}
 	}
 }
 
-.hero-bottom {
-	background:  @featured-color;
-	.wrap .box {
-		.benefits .benefit i {
-			color: @primary-color;
-		}
-		.cta button {
-			background-color: @background-color;
-			color: @primary-color;
-		}
-	}
+.rcp-active .content {
+	margin-top: 60px;
 }
