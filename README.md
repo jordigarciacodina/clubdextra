@@ -1,2 +1,2 @@
-# clubdextra
-Club Dextra Genesis Child Theme
+# Memberships Starter
+## This is the Memberships Starter Genesis Child Theme 
